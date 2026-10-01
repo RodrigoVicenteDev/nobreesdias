@@ -118,7 +118,7 @@ article.prose blockquote{margin:24px 0 0;padding:14px 20px;border-left:3px solid
 :root[data-theme="dark"] .cta-box,:root:not([data-theme="light"]) .cta-box{background:#0A121A}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-box{background:#0A121A}}
 .cta-box h3{color:#fff;font-size:24px;font-weight:700}
-.cta-box p{color:#B7C6D1;margin-top:12px;font-size:15.5px;max-width:52ch}
+.cta-box p,article.prose .cta-box p{color:#C7D4DE;margin-top:12px;font-size:15.5px;max-width:52ch}
 .cta-box .row{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
 
 footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-family:"IBM Plex Mono";font-size:12.5px;margin-top:40px}
