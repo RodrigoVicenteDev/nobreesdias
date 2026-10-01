@@ -1,0 +1,118 @@
+<!doctype html>
+<!-- ======================================================================
+     MODELO DE POST — Nobre & Dias
+     COMO USAR:
+     1. Copie a PASTA deste arquivo para blog/NOME-DO-POST/index.html
+        (o endereço do post vira https://nobredias.com.br/blog/NOME-DO-POST/)
+     2. Troque tudo que está entre [[ ]] pelos dados do seu post.
+     3. Escreva o conteúdo dentro de <article class="prose"> (use h2, p, ul...).
+     4. Adicione o post na lista em blog/index.html e no sitemap.xml.
+     (Passo a passo completo em blog/COMO-PUBLICAR.md)
+     ====================================================================== -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[[TÍTULO DO POST]] | Nobre & Dias</title>
+<meta name="description" content="[[RESUMO DE 1-2 FRASES — isto aparece no Google]]">
+<meta name="author" content="Rodrigo Dias, Fábio Nobre">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nobredias.com.br/blog/[[NOME-DO-POST]]/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nobre & Dias">
+<meta property="og:title" content="[[TÍTULO DO POST]]">
+<meta property="og:description" content="[[RESUMO DE 1-2 FRASES]]">
+<meta property="og:url" content="https://nobredias.com.br/blog/[[NOME-DO-POST]]/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://nobredias.com.br/og.png">
+<meta property="article:published_time" content="[[AAAA-MM-DD]]">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nobredias.com.br/og.png">
+<meta name="theme-color" content="#13212E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../blog.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[[TÍTULO DO POST]]",
+  "description": "[[RESUMO DE 1-2 FRASES]]",
+  "image": "https://nobredias.com.br/og.png",
+  "datePublished": "[[AAAA-MM-DD]]",
+  "dateModified": "[[AAAA-MM-DD]]",
+  "inLanguage": "pt-BR",
+  "author": [
+    { "@type": "Person", "name": "Rodrigo Dias", "url": "https://www.linkedin.com/in/rodrigo-dias-vicente/" },
+    { "@type": "Person", "name": "Fábio Nobre", "url": "https://www.linkedin.com/in/fabiohcnobre/" }
+  ],
+  "publisher": { "@type": "Organization", "name": "Nobre & Dias", "url": "https://nobredias.com.br/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nobredias.com.br/blog/[[NOME-DO-POST]]/" }
+}
+</script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="dot"></span>Nobre&nbsp;<span class="amp">&amp;</span>&nbsp;Dias</a>
+    <nav aria-label="Navegação principal">
+      <a href="/#ofertas">O que fazemos</a>
+      <a href="/#regioes">Regiões</a>
+      <a href="/blog/">Blog</a>
+      <a class="keep btn btn-primary" href="/#contato" style="padding:9px 16px;font-size:14px">Falar agora</a>
+      <button class="themebtn" id="theme" aria-label="Alternar tema">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap narrow">
+    <article class="prose">
+      <p class="crumb"><a href="/">Início</a> / <a href="/blog/">Blog</a> / [[TÍTULO CURTO]]</p>
+      <p class="meta">[[DATA POR EXTENSO]] · LEITURA DE ~X MIN · [[CATEGORIA]]</p>
+      <h1>[[TÍTULO DO POST]]</h1>
+      <p class="sub">[[LINHA DE ABERTURA — uma frase forte que resume a promessa do artigo.]]</p>
+
+      <!-- ===== ESCREVA O CONTEÚDO AQUI ===== -->
+      <p>[[Primeiro parágrafo.]]</p>
+
+      <h2>[[Subtítulo de seção]]</h2>
+      <p>[[Texto.]]</p>
+      <ul>
+        <li>[[item]]</li>
+        <li>[[item]]</li>
+      </ul>
+
+      <blockquote>[[Uma frase de destaque, opcional.]]</blockquote>
+      <!-- ===== FIM DO CONTEÚDO ===== -->
+
+      <div class="cta-box">
+        <p class="eyebrow" style="color:var(--accent)">Nobre &amp; Dias</p>
+        <h3>[[Chamada para ação — ex: Precisa de um sistema sob medida?]]</h3>
+        <p>[[Uma frase convidando a pessoa a falar com vocês.]]</p>
+        <div class="row">
+          <a class="btn btn-wa" data-wa="Olá! Vim pelo blog da Nobre & Dias e quero conversar.">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="/#contato" style="color:#fff;border-color:rgba(255,255,255,.3)">Deixar meu contato</a>
+        </div>
+      </div>
+
+      <hr class="hr">
+      <p class="meta">Escrito pela Nobre &amp; Dias. <a href="/blog/">Ver outros artigos →</a></p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Nobre &amp; Dias · Software House</span>
+    <span><a href="/">Início</a> · <a href="/blog/">Blog</a></span>
+  </div>
+</footer>
+
+<script src="../blog.js"></script>
+</body>
+</html>
